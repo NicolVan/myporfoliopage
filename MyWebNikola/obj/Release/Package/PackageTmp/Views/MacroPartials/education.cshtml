@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@using NikolaVan.lib.Models
+
+@{
+    EducationModel edumodel = new EducationModel();
+    edumodel.HightSchool = "2014 - 2018 SOŠ Podnikania , Interiérový dizajn";
+    edumodel.University = "2018 - 2020 TUKE,  Architektúra a Urbanizmus";
+}
+
+<div class="row">
+    <h1>Vzdelanie a práca</h1>
+    <br>
+    <h2>Stredná škola</h2>
+    <p>@edumodel.HightSchool</p>
+    <h2>Vysoká škola</h2>
+    <p>@edumodel.University</p>
+    <h2>Práca</h2>
+    <p>2023 - súčastnoť  Labaš s.r.o</p>
+    <p>Pokladník</p>
+    <p>2022 - 2023 Asko s.r.o</p>
+    <p>Plánovač kuchyň</p>
+    <p>2020 - 2022 Labaš s.r.o</p>
+    <p>Pokladník</p>
+    <h2>Kurzy</h2>
+    <ul>
+        @foreach (string nameCourse in edumodel.Namecourses.nameCourse)
+        {
+            <li><p>@nameCourse</p></li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,354 @@
+﻿body {
+    padding: 70px;
+    background-color: #f4f7fa;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header menu */
+.navbar {
+    border-radius: 0;
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+    .navbar-default .navbar-nav > li {
+        padding: 0;
+    }
+
+        .navbar-default .navbar-nav > li > a {
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #2B292E;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 5px solid transparent;
+        }
+
+            .navbar-default .navbar-nav > li > a:hover {
+                color: #2B292E;
+                text-decoration: none;
+                background-color: none;
+            }
+
+            .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+                color: #2B292E;
+                text-decoration: none;
+            }
+
+.navbar-logo {
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+    .navbar-logo a {
+        text-decoration: none;
+        color: #2B292E;
+    }
+
+    .navbar-logo img {
+        width: 40px;
+        margin: auto;
+        border-radius: 79% 21% 65% 35% / 73% 32% 68% 27%;
+    }
+
+@media(max-width: 767px) {
+    .navbar-logo {
+        float: left;
+    }
+}
+
+@media(min-width: 768px) {
+    .header .top-bar {
+        text-align: center;
+    }
+
+    .navbar-logo {
+        margin-right: 20px;
+    }
+
+    .navbar-menu {
+        margin-left: 20px;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover {
+        border-bottom: 5px;
+        color: #5c9d9d;
+    }
+
+    .navbar-collapse.collapse.navbar-menu {
+        margin: auto;
+        display: inline-block !important;
+        padding-top: 25px;
+    }
+}
+
+
+h1 {
+    font-size: 5rem;
+    color: #5c9d9d;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8d9999;
+}
+
+.text-primary {
+    color: #084a4a;
+    font-size: 1.5rem;
+}
+
+#typing-text {
+    font-size: 2.5rem;
+    color: #274747;
+}
+
+.centered-text {
+    text-align: left;
+    width: 100%;
+    padding-top: 200px; 
+    padding-left: 50px; 
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+    .centered-text {
+        padding-top: 30px;
+        padding-left: 20px; 
+    }
+}
+
+/* Adjust font size and alignment for mobile */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #typing-text {
+        font-size: 2rem;
+    }
+
+    .centered-text {
+        padding-top: 0;
+        text-align: left;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+}
+
+
+.meimg {
+    width: 35px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.image-wrapper {
+    position: relative;
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+.image-background {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: #8ac0b5;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+img {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    border-radius: 8px; 
+    display: block;
+}
+@media (max-width: 768px) {
+    .image-wrapper {
+        max-width: 100%; 
+    }
+
+    .image-background {
+        top: 8px; 
+        left: 8px;
+    }
+
+    img {
+        border-radius: 8px; 
+        max-width: 100%; 
+    }
+}
+    #force {
+        height: 100px;
+        clear: both;
+    }
+
+    .footer {
+        background-color: #f4f7fa;
+    }
+
+
+    .api-password-group {
+        display: none;
+    }
+
+    .form {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #5c9d9d;
+}
+
+    .form-item {
+        margin-bottom: 15px;
+        font-family: "Lora", serif;
+        font-size: 1.3rem;
+    }
+
+    .form-control {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        transition: border-color 0.3s;
+    }
+
+        .form-control:focus {
+            border-color: #5c9d9d;
+            box-shadow: 0 0 5px rgba(57, 149, 107, 0.5);
+        }
+
+    .contact-form .form-item {
+        padding-bottom: 10px;
+    }
+
+    .contact-form .form-item-hidden {
+        display: none;
+    }
+
+    .contact-form .form-item.right input {
+        text-align: right;
+    }
+
+.contact-form .form-item label {
+    padding-left: 5px;
+    color: #5c9d9d;
+    font-weight: normal;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+        .contact-form .form-item label.strong {
+            color: #000;
+        }
+
+.plantoasist-form .form-item label a {
+    color: #5c9d9d;
+    text-decoration: underline;
+}
+
+    .contact-form .form-item label.strong a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+.contact-form .form-item label a:hover {
+    color: #5c9d9d;
+    text-decoration: underline;
+}
+
+    .contact-form .row.new-section, .row.new-section {
+        margin-top: 20px;
+    }
+
+    .contact-form .form-item label.required::after {
+        position: absolute;
+        right: -12px;
+        top: 0;
+        color: red;
+        content: '*';
+        font-weight: bold;
+    }
+
+    .contact-form span.required {
+        position: relative;
+        content: '';
+        width: 10px;
+        display: inline-block;
+    }
+
+        .contact-form span.required::after {
+            position: absolute;
+            right: 0;
+            top: -15px;
+            color: red;
+            content: '*';
+            font-weight: bold;
+        }
+
+.contact-form .title {
+    color: #5c9d9d;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 30px 0;
+}
+
+    .contact-form .description {
+        color: #000;
+        font-size: 11px;
+    }
+
+.contact-form fieldset {
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 1px solid #5c9d9d;
+}
+
+    .contact-form fieldset legend {
+        font-size: 14px;
+        color: #5c9d9d;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        width: auto;
+        background-color: white;
+    }
+
+.btn-default {
+    background-color: #5c9d9d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+    .btn-default:hover {
+        background-color: #376363 !important;
+        cursor: pointer;
+    }
