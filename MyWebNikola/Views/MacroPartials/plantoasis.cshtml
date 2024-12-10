@@ -1,0 +1,42 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Image Slider (Carousel) -->
+        <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/Styles/images/plantoasis1.png" class="d-block w-100" alt="Plant Oasis 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Styles/images/plantoasis2.png" class="d-block w-100" alt="Plant Oasis 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Styles/images/plantoasis3.png" class="d-block w-100" alt="Plant Oasis 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h1>Plant Oasis</h1>
+        <p>E-shop s mäsožravými rastlinamy, bonai a riasogule</p>
+        <p><a href="https://plant-oasis.sk" class="link">Navštív E-shop</a></p>
+        <p><a href="https://github.com/NicolVan/plantOasis/tree/main/PlantOasis" class="link">Zdrojový kód tu</a></p>
+        <a href="@Url.Content("~/projekty")" class="view-more">Späť na projekty</a>
+    </div>
+</div>
+
+
+<script>
+    var myCarousel = new bootstrap.Carousel(document.getElementById('imageSlider'), {
+        interval: 5000
+    });
+</script>
+

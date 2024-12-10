@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+<div class="full-screen-container">
+    <div class="project-slider">
+        <div class="project active" data-href="plantoasis">
+            <img src="~/Styles/images/plantoasis.png" alt="Projekt 1" class="full-screen-image">
+            <h2>Plant Oasis</h2>
+            <p>Eshop s rastlinami</p>
+            <a href="@Url.Content("~/projekty/plantoasis")" class="view-more">Viac o projekte</a>
+        </div>
+        <div class="project" data-href="project2.html">
+            <img src="~/Styles/images/Me.jpg" alt="Projekt 2" class="full-screen-image">
+            <h2>Projekt 2</h2>
+            <p>Popis pre projekt 2.</p>
+            <a href="@Url.Content("~/projekty")" class="view-more">Viac o projekte</a>
+        </div>
+        <div class="project" data-href="project3.html">
+            <img src="~/Styles/images/Me.jpg" alt="Projekt 3" class="full-screen-image">
+            <h2>Projekt 3</h2>
+            <p>Popis pre projekt 3.</p>
+            <a href="@Url.Content("~/projekty")"class="view-more">Viac o projekte</a>
+        </div>
+        <button class="prev">⟨</button>
+        <button class="next">⟩</button>
+    </div>
+</div>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const projects = document.querySelectorAll(".project");
+            const prevButton = document.querySelector(".prev");
+            const nextButton = document.querySelector(".next");
+
+            let currentIndex = 0;
+
+            function showProject(index) {
+                projects.forEach((project, i) => {
+                    project.classList.remove("active");
+                    if (i === index) {
+                        project.classList.add("active");
+                    }
+                });
+            }
+
+            prevButton.addEventListener("click", () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : projects.length - 1;
+                showProject(currentIndex);
+            });
+
+            nextButton.addEventListener("click", () => {
+                currentIndex = (currentIndex < projects.length - 1) ? currentIndex + 1 : 0;
+                showProject(currentIndex);
+            });
+
+            // Počiatočné zobrazenie prvého projektu
+            showProject(currentIndex);
+        });
+
+</script>
