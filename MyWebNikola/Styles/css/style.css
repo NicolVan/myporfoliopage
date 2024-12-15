@@ -241,13 +241,15 @@ h2 {
 }
 
 .text-primary {
-    color: #084a4a;
+    color:black !important;
     font-size: 1.5rem;
 }
 
 #typing-text {
-    font-size: 2.5rem;
-    color: #274747;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .centered-text {
