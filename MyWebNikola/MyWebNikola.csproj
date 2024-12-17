@@ -4374,7 +4374,6 @@
     <Content Include="Views\BlogArticle.cshtml" />
     <Content Include="Views\layoutBlog.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogArticleList.cshtml" />
-    <Content Include="Views\Partials\Blog\_BlogArticleListJuicyCarrot.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogCategories.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogFooter.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogHeader.cshtml" />

@@ -46,6 +46,9 @@
 
 <div class="container-fluid">
     <div class="row">
+        <div class="col-md-3">
+            @Html.Partial("Blog/_BlogCategories")
+        </div>
         <div class="col-md-9">
             <div class="blog-article">
                 <div class="row">
@@ -69,8 +72,6 @@
                     @Html.GetGridHtml(Model, "articleContent", "Bootstrap3-Fluid")
                 </div>
             </div>
-
-            @Html.Partial("Layout/_JuicyCarrotBar")
 
             <div class="blog-article-footer">
                 <div class="row">
@@ -129,10 +130,6 @@
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="col-md-3">
-            @Html.Partial("Blog/_BlogCategories")
         </div>
     </div>
 </div>

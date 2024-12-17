@@ -94,11 +94,21 @@ button.next {
     z-index: 10;
     font-size: 1.5rem;
 }
-
+footer a {
+    color:white;
+}
+.nav > li a {
+    color:white;
+}
+a {
+    color: black;
+}
 button.prev {
     left: 10px;
 }
-
+.blog-page-body {
+    min-height: 100vh;
+}
 button.next {
     right: 10px;
 }
@@ -236,10 +246,26 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: #8d9999;
 }
+.blog-categories ul.bc-menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+    .blog-categories ul.bc-menu li a {
+        padding: 10px 5px;
+        text-decoration: none;
+        display: block;
+        color: #000;
+        border-bottom: 1px solid #E7E7E7;
+    }
+
+        .blog-categories ul.bc-menu li a:hover {
+            color: #5c9d9d;
+        }
 .text-primary {
     color:black !important;
     font-size: 1.5rem;
