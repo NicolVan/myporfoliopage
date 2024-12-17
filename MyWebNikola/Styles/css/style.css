@@ -103,7 +103,7 @@ button.next {
     right: 10px;
 }
 p{
-    color: black !important;
+    color: black ;
 }
     button.prev:hover,
     button.next:hover {
@@ -244,14 +244,30 @@ h2 {
     color:black !important;
     font-size: 1.5rem;
 }
-
+.page-body {
+    min-height: 100vh;
+}
+.footer-text-section{
+    color: white;
+    font-size:2rem;
+    text-align:center;
+}
+footer {
+    background-color: #5c9d9d;
+    text-align:center;
+}
+footer p {
+    color: white;
+}
 #typing-text {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
 }
-
+footer span{
+    color:white;
+}
 .centered-text {
     text-align: left;
     width: 100%;

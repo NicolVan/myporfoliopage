@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "layoutBlog.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="blog-intro">
+                <h1>
+                    TVORBA WEBOVÝCH STRÁNOK
+                </h1>
+                <p>
+                    Všetko, čo ste chceli vedieť o tvorbe webových stránok.
+                    <br />
+                    Rady pre tých, ktorí si chcú dať vytvoriť webové stránky,
+                    ale aj pre tých ktorí ich chcú vytvárať.
+                </p>
+            </div>
+            <div class="blog-article-list">
+                @Html.Partial("Blog/_BlogArticleList")
+            </div>
+        </div>
+        <div class="col-md-3">
+            @Html.Partial("Blog/_BlogCategories")
+        </div>
+    </div>
+</div>

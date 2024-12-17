@@ -78,6 +78,7 @@
     <Compile Include="NikolaVaniscakUmbracoApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\ConfigurationUtil.cs" />
+    <Compile Include="Util\HtmlHelper.cs" />
     <Compile Include="Util\MyWebNikolaMailer.cs" />
     <Compile Include="Util\TranslateUtil.cs" />
   </ItemGroup>

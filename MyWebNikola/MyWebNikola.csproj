@@ -2413,7 +2413,7 @@
     <Content Include="Styles\images\plantoasis3.png" />
     <Content Include="Styles\images\plantoasis4.png" />
     <Content Include="Styles\images\plantoasis5.png" />
-    <Content Include="Styles\images\pointing-finger.svg" />
+    <Content Include="Styles\images\Recipe App.png" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
     <Content Include="Umbraco\assets\css\nonodes.style.min.css" />
@@ -4367,6 +4367,17 @@
     <Content Include="Views\MacroPartials\education.cshtml" />
     <Content Include="Views\MacroPartials\plantoasis.cshtml" />
     <Content Include="Views\MacroPartials\project.cshtml" />
+    <Content Include="Views\MacroPartials\recipeapp.cshtml" />
+    <Content Include="Views\BlogPage.cshtml" />
+    <Content Include="Views\BlogAuthor.cshtml" />
+    <Content Include="Views\BlogCategory.cshtml" />
+    <Content Include="Views\BlogArticle.cshtml" />
+    <Content Include="Views\layoutBlog.cshtml" />
+    <Content Include="Views\Partials\Blog\_BlogArticleList.cshtml" />
+    <Content Include="Views\Partials\Blog\_BlogArticleListJuicyCarrot.cshtml" />
+    <Content Include="Views\Partials\Blog\_BlogCategories.cshtml" />
+    <Content Include="Views\Partials\Blog\_BlogFooter.cshtml" />
+    <Content Include="Views\Partials\Blog\_BlogHeader.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
