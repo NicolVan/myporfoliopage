@@ -2406,6 +2406,7 @@
     <Content Include="Styles\images\ajax-loader.gif" />
     <Content Include="Styles\images\arrow-left.png" />
     <Content Include="Styles\images\arrow-right.png" />
+    <Content Include="Styles\images\blog-facebook.png" />
     <Content Include="Styles\images\Me.jpg" />
     <Content Include="Styles\images\plantoasis.png" />
     <Content Include="Styles\images\plantoasis1.png" />

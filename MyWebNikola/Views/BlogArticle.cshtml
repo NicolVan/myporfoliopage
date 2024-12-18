@@ -57,6 +57,9 @@
                             <h1>
                                 @Model.Value("pageTitle")
                             </h1>
+                            <div class="ba-content">
+                                @Html.GetGridHtml(Model, "articleContent", "Bootstrap3-Fluid")
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -68,9 +71,6 @@
                         }
                     </div>
                 </div>
-                <div class="ba-content">
-                    @Html.GetGridHtml(Model, "articleContent", "Bootstrap3-Fluid")
-                </div>
             </div>
 
             <div class="blog-article-footer">
@@ -80,11 +80,9 @@
                             <p><strong>Zaujal vás tento článok? Dajte vedieť aj vašim známym.</strong></p>
                             <div class="fb-share-button" data-href="@articleUrl" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" href="@fbShareUrl" target="_blank">Zdieľať</a></div>
                             <div class="social-follow">
-                                <p>Sledujte naše sociálne siete.</p>
+                                <p>Sledujte moje sociálne siete.</p>
                                 <p>
-                                    <a href="https://www.facebook.com/dufeksoft/" target="_blank"><img src="@Url.Content("~/Styles/images/blog-facebook.png")" alt="Facebook" /></a>
-                                    <a href="https://twitter.com/dufeksoft/" target="_blank"><img src="@Url.Content("~/Styles/images/blog-twitter.png")" alt="Twitter" /></a>
-                                    <a href="https://www.youtube.com/+Dufeksoft" target="_blank"><img src="@Url.Content("~/Styles/images/blog-youtube.png")" alt="YouTube" /></a>
+                                    <a href="https://www.facebook.com/ved.nik.vies/" target="_blank"><img src="@Url.Content("~/Styles/images/blog-facebook.png")" alt="Facebook" /></a>
                                 </p>
                             </div>
                         </div>

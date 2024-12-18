@@ -47,7 +47,7 @@
     <div class="blog-article-preview">
         <a href="@child.Url">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     @if (!string.IsNullOrEmpty(imgUrl))
                     {
                         <div class="bap-image">
@@ -55,15 +55,12 @@
                         </div>
                     }
                 </div>
-                <div class="col-md-6">
                     <div class="bap-title">
                         <h2>@child.Value("pageTitle")</h2>
                     </div>
                     <div class="bap-text">
                         <p>
                             @child.Value("articlePreviewText")
-                        </p>
-                    </div>
                 </div>
             </div>
         </a>

@@ -262,7 +262,17 @@ h2 {
         color: #000;
         border-bottom: 1px solid #E7E7E7;
     }
-
+.blog-article-preview .bap-image {
+    padding: 10px 20px;
+}
+.ba-content {
+    font-size:2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    .blog-article-preview .bap-image img {
+        max-width: 100%;
+        border: 1px solid #F0F0F0;
+    }
         .blog-categories ul.bc-menu li a:hover {
             color: #5c9d9d;
         }
