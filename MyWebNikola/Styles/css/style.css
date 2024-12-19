@@ -28,8 +28,10 @@
     align-items: center;
     overflow: hidden;
 }
-
-.project {
+.project img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .project {
     display: none; 
     flex-direction: column;
     align-items: center;
@@ -47,32 +49,31 @@
 .full-screen-image {
     max-width: 100%;
     max-height: 70%;
-    object-fit: contain; 
+    object-fit: contain;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 10px;
     color: #333;
 }
 
 .project p {
-    font-size: 1rem;
+    font-size: 2.5rem;
     color: #555;
     margin-bottom: 20px;
 }
 
 .view-more {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #39956b;
     text-decoration: none;
     border: 1px solid #39956b;
-    padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
-    width:80px;
+    width:100px;
 }
 
     .view-more:hover {
@@ -114,6 +115,7 @@ button.next {
 }
 p{
     color: black ;
+    font-size:2rem;
 }
     button.prev:hover,
     button.next:hover {
@@ -172,6 +174,10 @@ p{
     }
 }
 
+.carousel-control-next, .carousel-control-prev{
+    background-color: cadetblue;
+    width:1%;
+}
 /* Optional styling for the carousel */
 #imageSlider {
     max-width: 100%;
@@ -184,12 +190,14 @@ p{
     text-decoration:none;
 }
 .carousel-item img {
-    height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    height: 1000px;
 }
 
 .view-more {
     margin-top: 20px;
+    margin-bottom:20px;
 }
 
 .navbar-logo {
@@ -245,7 +253,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #8d9999;
 }
 .blog-categories ul.bc-menu li {
@@ -294,8 +302,10 @@ footer {
 footer p {
     color: white;
 }
-#typing-text {
+span {
     font-size: 2rem;
+}
+#typing-text {
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -445,6 +455,7 @@ footer span{
     }
 
 .contact-form .form-item label {
+    font-size:2rem;
     padding-left: 5px;
     color: #5c9d9d;
     font-weight: normal;
@@ -531,6 +542,7 @@ footer span{
     }
 
 .btn-default {
+    font-size: 2rem;
     background-color: #5c9d9d;
     border: none;
     padding: 10px 20px;

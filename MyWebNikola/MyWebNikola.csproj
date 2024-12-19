@@ -2407,6 +2407,9 @@
     <Content Include="Styles\images\arrow-left.png" />
     <Content Include="Styles\images\arrow-right.png" />
     <Content Include="Styles\images\blog-facebook.png" />
+    <Content Include="Styles\images\Favourite page.png" />
+    <Content Include="Styles\images\ingredientlist.png" />
+    <Content Include="Styles\images\LoginPage.png" />
     <Content Include="Styles\images\Me.jpg" />
     <Content Include="Styles\images\plantoasis.png" />
     <Content Include="Styles\images\plantoasis1.png" />
@@ -2415,6 +2418,7 @@
     <Content Include="Styles\images\plantoasis4.png" />
     <Content Include="Styles\images\plantoasis5.png" />
     <Content Include="Styles\images\Recipe App.png" />
+    <Content Include="Styles\images\todolist.png" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
     <Content Include="Umbraco\assets\css\nonodes.style.min.css" />
