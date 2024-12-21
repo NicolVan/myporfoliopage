@@ -279,11 +279,21 @@ h2 {
 .ba-content {
     font-size:2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:20px;
 }
-    .blog-article-preview .bap-image img {
-        max-width: 100%;
-        border: 1px solid #F0F0F0;
-    }
+.ba-image{
+    padding-left:20px;
+}
+.blog-article-list {
+    padding-left: 20px;
+}
+.blog-article-footer {
+    padding-left: 20px;
+}
+.blog-article-preview .bap-image img {
+    max-width: 70%;
+    border: 1px solid #F0F0F0;
+}
         .blog-categories ul.bc-menu li a:hover {
             color: #5c9d9d;
         }
@@ -291,8 +301,11 @@ h2 {
     color:black !important;
     font-size: 1.5rem;
 }
+
+
 .page-body {
     min-height: 100vh;
+    max-width:100%;
 }
 .footer-text-section{
     color: white;
@@ -407,8 +420,32 @@ footer span{
     .footer {
         background-color: #f4f7fa;
     }
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 250px; 
+    }
 
+    #typing-text {
+        font-size: 1.5rem; 
+    }
 
+    .link {
+        font-size: 0.9rem; 
+    }
+}
+.carousel-item {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+.carousel-img {
+    width: 100%; /* Obrázky sa roztiahnu na 100% šírky kontajnera */
+    height: auto; /* Zachovanie proporcií */
+    object-fit: cover; /* Obrázok vyplní priestor bez deformácie */
+    display: block; /* Odstránenie medzier spôsobených inline-block elementmi */
+    margin: 0; /* Zrušenie okrajov */
+    padding: 0; /* Zrušenie výplní */
+}
     .api-password-group {
         display: none;
     }
@@ -445,46 +482,60 @@ footer span{
             border-color: #5c9d9d;
             box-shadow: 0 0 5px rgba(57, 149, 107, 0.5);
         }
-
-    .contact-form .form-item {
-        padding-bottom: 10px;
+@media (max-width: 768px) {
+    .product-image {
+        max-width: 200px;
+        max-height: 300px;
     }
-
-    .contact-form .form-item-hidden {
-        display: none;
-    }
-
-    .contact-form .form-item.right input {
-        text-align: right;
-    }
-
-.contact-form .form-item label {
-    font-size:2rem;
-    padding-left: 5px;
-    color: #5c9d9d;
-    font-weight: normal;
-    margin-bottom: 2px;
-    position: relative;
 }
+    #vzdelanie-section {
+        padding-left: 15px;
+    }
 
-        .contact-form .form-item label.strong {
-            color: #000;
+    .contact-form {
+        padding-left: 15px;
+    }
+
+        .contact-form .form-item {
+            padding-bottom: 10px;
+            padding-left: 15px;
         }
 
-.plantoasist-form .form-item label a {
-    color: #5c9d9d;
-    text-decoration: underline;
-}
+        .contact-form .form-item-hidden {
+            display: none;
+        }
+
+        .contact-form .form-item.right input {
+            text-align: right;
+        }
+
+        .contact-form .form-item label {
+            font-size: 2rem;
+            padding-left: 5px;
+            color: #5c9d9d;
+            font-weight: normal;
+            margin-bottom: 2px;
+            position: relative;
+        }
+
+            .contact-form .form-item label.strong {
+                color: #000;
+            }
+
+    .plantoasist-form .form-item label a {
+        color: #5c9d9d;
+        text-decoration: underline;
+    }
 
     .contact-form .form-item label.strong a {
         color: #000;
         text-decoration: underline;
     }
 
-.contact-form .form-item label a:hover {
-    color: #5c9d9d;
-    text-decoration: underline;
-}
+    .contact-form .form-item label a:hover {
+        color: #5c9d9d;
+        text-decoration: underline;
+    }
 
     .contact-form .row.new-section, .row.new-section {
         margin-top: 20px;
@@ -515,47 +566,88 @@ footer span{
             font-weight: bold;
         }
 
-.contact-form .title {
-    color: #5c9d9d;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 30px 0;
-}
+    .contact-form .title {
+        color: #5c9d9d;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 30px 0;
+    }
 
     .contact-form .description {
         color: #000;
         font-size: 11px;
     }
 
-.contact-form fieldset {
-    padding: 10px 20px;
-    border-radius: 0;
-    border: 1px solid #5c9d9d;
-}
+    .contact-form fieldset {
+        padding: 10px 20px;
+        border-radius: 0;
+        border: 1px solid #5c9d9d;
+    }
 
-    .contact-form fieldset legend {
-        font-size: 14px;
-        color: #5c9d9d;
-        margin: 0;
-        padding: 0;
-        padding-left: 10px;
-        padding-right: 10px;
+        .contact-form fieldset legend {
+            font-size: 14px;
+            color: #5c9d9d;
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: auto;
+            background-color: white;
+        }
+
+    .btn-default {
+        font-size: 2rem;
+        background-color: #5c9d9d;
         border: none;
-        width: auto;
-        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
     }
 
-.btn-default {
-    font-size: 2rem;
-    background-color: #5c9d9d;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
+        .btn-default:hover {
+            background-color: #376363 !important;
+            cursor: pointer;
+        }
+svg {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-    .btn-default:hover {
-        background-color: #376363 !important;
-        cursor: pointer;
+    svg + footer {
+        margin-top: 0;
+        padding-top: 0;
     }
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+svg + footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+.ba-title{
+    padding-left:20px;
+}
+footer {
+    margin: 0;
+    padding: 0;
+}
+svg:last-of-type {
+    margin-bottom: -5px; /* Jemne stiahne footer k vlne */
+}
+@media (max-width: 768px) {
+    .page-body{
+        min-height:100%;
+    }
+   
+    footer {
+        margin: 0;
+        padding: 0px;
+    }
+}

@@ -2403,6 +2403,8 @@
     <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\fonts\lg.svg" />
     <Content Include="Styles\fonts\slick.svg" />
+    <Content Include="Styles\images\AddRecipe.png" />
+    <Content Include="Styles\images\AddSupplies.png" />
     <Content Include="Styles\images\ajax-loader.gif" />
     <Content Include="Styles\images\arrow-left.png" />
     <Content Include="Styles\images\arrow-right.png" />
@@ -2418,7 +2420,6 @@
     <Content Include="Styles\images\plantoasis4.png" />
     <Content Include="Styles\images\plantoasis5.png" />
     <Content Include="Styles\images\Recipe App.png" />
-    <Content Include="Styles\images\todolist.png" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
     <Content Include="Umbraco\assets\css\nonodes.style.min.css" />
@@ -4382,6 +4383,7 @@
     <Content Include="Views\Partials\Blog\_BlogCategories.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogFooter.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogHeader.cshtml" />
+    <Content Include="Views\MacroPartials\vlny.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

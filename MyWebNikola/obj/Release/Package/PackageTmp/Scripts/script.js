@@ -1,15 +1,11 @@
-﻿let text = "Som full stack web developer. ";
+﻿let colors = ["#1C2E4A", "#52677D", "#BDC4D4", "#0F1A2B"]
 const typingText = document.getElementById("typing-text");
-let index = 0;
+let colorIndex = 0;
 
-function type() {
-    if (index < text.length) {
-        typingText.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(type, 250);
-    }
+function changeColor() {
+    typingText.style.color = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length; 
+    setTimeout(changeColor, 500); 
 }
 
-document.addEventListener("DOMContentLoaded", type);
-
-
+document.addEventListener("DOMContentLoaded", changeColor);

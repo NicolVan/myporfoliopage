@@ -3,8 +3,8 @@
     var home = Model.Root();
 }
 
-<ul class="nav navbar-nav">
-    <li class="@(home.Url.ToString() == Model.Url.ToString() ? "selected" : null)"><a href="@home.Url">@home.Value("menuTitle")</a></li>
+<ul class="nav navbar-nav " id="custom">
+    <li class="@(home.Url.ToString() == Model.Url.ToString() ? "selected" : null)"><a href="@home.Url" class="b">@home.Value("menuTitle")</a></li>
     @foreach (var childPage in home.Children)
     {
         if (childPage.IsDocumentType("texty"))
