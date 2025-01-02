@@ -7,13 +7,12 @@
 }
 else
 {
-
     <h1>Pošlite mi správu</h1>
     using (Html.BeginUmbracoForm<NikolaVan.lib.Controllers.ContactController>("HandleFormSubmit", null, new { @class = "form-horizontal", role = "form" }))
     {
         <div class="contact-form">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-10">
                     @Html.ValidationSummary(true, CurrentLang.GetText("Views/ContactForm", "Správu sa nepodarilo odoslať. Opravte chyby a skúste správu odoslať znovu."))
                     @Html.AntiForgeryToken()
                     <div class="form-item">
@@ -23,7 +22,7 @@ else
                     </div>
                     <div class="form-item">
                         @Html.LabelFor(x => x.Email)
-                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" , type = "email" })
                         @Html.ValidationMessageFor(m => m.Email)
                     </div>
                     <div class="form-item">
@@ -45,7 +44,7 @@ else
             </div>
             <div class="row submit">
                 <div class="col-md-6">
-                    <a href="#" onclick="document.getElementById('submitButton').click(); return false;" class="btn btn-default ">Send message</a>
+                    <a href="#" onclick="document.getElementById('submitButton').click(); return false;" class="btn btn-default ">Poslať správu</a>
                     <input type="submit" id="submitButton" class="hidden" />
                 </div>
             </div>

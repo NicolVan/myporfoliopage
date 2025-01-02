@@ -279,11 +279,21 @@ h2 {
 .ba-content {
     font-size:2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:20px;
 }
-    .blog-article-preview .bap-image img {
-        max-width: 100%;
-        border: 1px solid #F0F0F0;
-    }
+.ba-image{
+    padding-left:20px;
+}
+.blog-article-list {
+    padding-left: 20px;
+}
+.blog-article-footer {
+    padding-left: 20px;
+}
+.blog-article-preview .bap-image img {
+    max-width: 70%;
+    border: 1px solid #F0F0F0;
+}
         .blog-categories ul.bc-menu li a:hover {
             color: #5c9d9d;
         }
@@ -600,3 +610,44 @@ footer span{
             background-color: #376363 !important;
             cursor: pointer;
         }
+svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+    svg + footer {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+svg + footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+.ba-title{
+    padding-left:20px;
+}
+footer {
+    margin: 0;
+    padding: 0;
+}
+svg:last-of-type {
+    margin-bottom: -5px; /* Jemne stiahne footer k vlne */
+}
+@media (max-width: 768px) {
+    .page-body{
+        min-height:100%;
+    }
+   
+    footer {
+        margin: 0;
+        padding: 0px;
+    }
+}

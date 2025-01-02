@@ -9,7 +9,6 @@
     font-size:1.5rem;
 }
 .btn {
-    background-color: dimgray !important;
     color: whitesmoke;
 }
 .full-screen-container {
@@ -47,8 +46,7 @@
     }
 
 .full-screen-image {
-    max-width: 100%;
-    max-height: 70%;
+    max-width: 50%;
     object-fit: contain;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -138,9 +136,10 @@ p{
     color: white !important;
     text-decoration-line: none;
 }
-    .navbar .navbar-brand:hover {
-        color: #ffffff; 
-    }
+.navbar .navbar-brand:hover {
+    color: #ffffff;
+    background: #5c9d9d !important;
+}
 
 .eshop {
     margin-top: 50px;
@@ -180,8 +179,10 @@ p{
 }
 /* Optional styling for the carousel */
 #imageSlider {
-    max-width: 100%;
-    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#imageSlider #Recipe {
+    max-width:50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navbar {
@@ -190,7 +191,6 @@ p{
     text-decoration:none;
 }
 .carousel-item.recipe img {
-    height: 1500px;
     object-position:center;
     width:100%;
 }
@@ -262,19 +262,199 @@ h2 {
 }
 .blog-categories ul.bc-menu li {
     list-style: none;
+    padding:0;
+    margin: 0;
+}
+.blog-categories{
+    padding-right:40px;
+    padding-bottom:30px;
+}
+.blog-categories ul.bc-menu li a {
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    border-bottom: 1px solid #E7E7E7;
+}
+.blog-article-list {
+    padding: 30px;
+}
+
+    .blog-article-list h1 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+.blog-article-preview {
     padding: 0;
     margin: 0;
 }
 
-    .blog-categories ul.bc-menu li a {
-        padding: 10px 5px;
+    .blog-article-preview a {
         text-decoration: none;
-        display: block;
         color: #000;
-        border-bottom: 1px solid #E7E7E7;
+        padding: 20px 0;
+        border-bottom: 1px solid #3eb57e;
+        display: block;
     }
-.blog-article-preview .bap-image {
-    padding: 10px 20px;
+
+        .blog-article-preview a:hover {
+            background-color: #e7e7e7;
+        }
+
+        .blog-article-preview a h2 {
+            color: #39956b;
+        }
+
+        .blog-article-preview a:hover h2 {
+            color: #3eb57e;
+        }
+
+    .blog-article-preview .bap-image {
+        padding: 10px 20px;
+    }
+
+        .blog-article-preview .bap-image img {
+            max-width: 100%;
+            border: 1px solid #39956b;
+            border-radius: 5px;
+        }
+
+    .blog-article-preview .bap-title {
+        padding: 10px 20px;
+    }
+
+    .blog-article-preview .bap-text {
+        padding: 10px 20px;
+        color: black;
+    }
+
+
+.blog-article .ba-image img {
+    max-width: 80%;
+    padding-top:45px;
+}
+
+.blog-article .ba-content {
+    margin: 20px 0;
+}
+
+.blog-article-footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #F0F0F0;
+}
+
+.blog-social-plugins .social-follow {
+    margin-top: 20px;
+}
+
+.blog-author a {
+    color: #000;
+    text-decoration: none;
+}
+
+    .blog-author a:hover {
+        color: #3eb57e;
+        text-decoration: underline;
+    }
+
+/* Blog author */
+.blog-author-detail .bad-name {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.blog-author-detail .bad-image {
+    padding: 20px;
+}
+
+.blog-author-detail .bad-description {
+    padding: 20px;
+}
+
+
+/* Blog prev/next */
+.blog-article-prev-next {
+    border-top: 1px solid #F0F0F0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+    .blog-article-prev-next .article-prev {
+        text-align: left;
+        padding-left: 40px;
+        position: relative;
+        min-height: 50px;
+    }
+
+    .blog-article-prev-next .article-next {
+        text-align: right;
+        padding-right: 40px;
+        position: relative;
+        min-height: 50px;
+    }
+
+@media(max-width: 767px) {
+    .blog-article-prev-next .article-prev {
+        margin-bottom: 20px;
+    }
+}
+
+.blog-article-prev-next .btn {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background-color: #39956b;
+    border: 1px solid #39956b;
+    border-radius: 0;
+    color: #FFF;
+    text-align: left;
+    font-size: 24px;
+    padding: 7px 0 0 0;
+}
+
+.blog-article-prev-next a {
+    text-decoration: none;
+}
+
+    .blog-article-prev-next a:hover {
+        text-decoration: none;
+    }
+
+        .blog-article-prev-next a:hover .btn {
+            background-color: #3eb57e;
+            border: 1px solid #3eb57e;
+            color: #FFF;
+        }
+
+.blog-article-prev-next .article-prev .btn {
+    left: 0;
+    padding-left: 6px;
+}
+
+.blog-article-prev-next .article-next .btn {
+    right: 0;
+    padding-left: 7px;
+}
+
+.blog-article-prev-next a .heading {
+    font-size: 12px;
+    color: #39956b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blog-article-prev-next a:hover .heading {
+    color: #3eb57e
+}
+
+.blog-article-prev-next a .title {
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .ba-content {
     font-size:2rem;
@@ -305,7 +485,7 @@ h2 {
 
 .page-body {
     min-height: 100vh;
-    max-width:100%;
+    padding:15px;
 }
 .footer-text-section{
     color: white;
@@ -322,11 +502,7 @@ footer p {
 span {
     font-size: 2rem;
 }
-#typing-text {
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-}
+
 footer span{
     color:white;
 }
@@ -355,10 +531,7 @@ footer span{
         font-size: 1.5rem;
     }
 
-    #typing-text {
-        font-size: 2rem;
-    }
-
+   
     .centered-text {
         padding-top: 0;
         text-align: left;
@@ -380,20 +553,11 @@ footer span{
     max-width: 100%;
 }
 
-.image-background {
-    position: absolute;
-    top: 15px;
-    width: 64%;
-    height: 90%;
-    background-color: #8ac0b5;
-    border-radius: 8px;
-    z-index: -5;
-}
 .image  img{
     position: relative;
     left: 15px;
     height: 50%;
-    border-radius: 8px;
+    border-radius: 50px;
     z-index: 1
 }
 
@@ -425,9 +589,7 @@ footer span{
         max-height: 250px; 
     }
 
-    #typing-text {
-        font-size: 1.5rem; 
-    }
+  
 
     .link {
         font-size: 0.9rem; 
@@ -642,8 +804,8 @@ svg:last-of-type {
     margin-bottom: -5px; /* Jemne stiahne footer k vlne */
 }
 @media (max-width: 768px) {
-    .page-body{
-        min-height:100%;
+    .page-body {
+        min-height: 100vh;
     }
    
     footer {
