@@ -15,9 +15,9 @@ namespace NikolaVan.lib.Models
             nameCourse = new List<string>
             {
                 "Kurz HTML",
-                "Kurz Css",
+                "Kurz CSS",
                 "Kurz C#",
-                "Kurz  Javascript",
+                "Kurz  JavaScript",
                 "Kurz  Umbraco",
                 "Kurz  Bootstrap"
             };

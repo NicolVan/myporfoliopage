@@ -1,53 +1,22 @@
 ﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
-<div class="full-screen-container">
-    <div class="project-slider">
-        <div class="project active" data-href="plantoasis">
-            <img src="~/Styles/images/plantoasis.png" alt="Projekt 1" class="full-screen-image">
-            <h2 id="typing-text">Plant Oasis</h2>
-            <p>Eshop s rastlinami</p>
-            <p>Umbraco & C#</p>
-            <a href="@Url.Content("~/projekty/plantoasis")" class="view-more">Viac o projekte</a>
+<div class="projekty ">
+    <div class="projects">
+        <img src="~/Styles/images/plantoasis.png" alt="Projekt 1" class="full-screen-image">
+        <div class="text">
+            <h3><a href="@Url.Content("~/projekty/plantoasis")">Plant Oasis</a></h3>
+            <p>Eshop s mäsožravými rastlinami, riasoguľami a bonsajmi.</p>
+            <p>Technológie: Umbraco & C#</p>
+            <a href="@Url.Content("~/projekty/plantoasis")" class="btn-default">Viac o projekte</a>
         </div>
-        <div class="project" data-href="recipeapp">
-            <img src="~/Styles/images/Recipe App.png" alt="Projekt 2" class="full-screen-image">
-            <h2 id="typing-text">Recipe App</h2>
-            <p>Recepty</p>
-            <p>React  &  JS</p>
-            <a href="@Url.Content("~/projekty/recipe-app")" class="view-more">Viac o projekte</a>
+    </div>
+    <hr />
+    <div class="pro">
+        <div class="text">
+            <h3>Recipe App</h3>
+            <p>Recepty s možnosťou prehľadnej špajze v jednej aplikácií </p>
+            <p>Technológie: React  &  JS</p>
+            <a href="@Url.Content("~/projekty/recipe-app")" class="link btn btn-default">Viac o projekte</a>
         </div>
-        <button class="prev">⟨</button>
-        <button class="next">⟩</button>
+        <img src="~/Styles/images/Recipe App.png" alt="Projekt 2"  class="full-screen-images" />
     </div>
 </div>
-<script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const projects = document.querySelectorAll(".project");
-            const prevButton = document.querySelector(".prev");
-            const nextButton = document.querySelector(".next");
-
-            let currentIndex = 0;
-
-            function showProject(index) {
-                projects.forEach((project, i) => {
-                    project.classList.remove("active");
-                    if (i === index) {
-                        project.classList.add("active");
-                    }
-                });
-            }
-
-            prevButton.addEventListener("click", () => {
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : projects.length - 1;
-                showProject(currentIndex);
-            });
-
-            nextButton.addEventListener("click", () => {
-                currentIndex = (currentIndex < projects.length - 1) ? currentIndex + 1 : 0;
-                showProject(currentIndex);
-            });
-
-            // Počiatočné zobrazenie prvého projektu
-            showProject(currentIndex);
-        });
-
-</script>

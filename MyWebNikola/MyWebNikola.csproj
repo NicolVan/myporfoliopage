@@ -744,6 +744,8 @@
     <Content Include="Styles\css\chosen\chosen-sprite.png" />
     <Content Include="Styles\css\chosen\chosen.css" />
     <Content Include="Styles\css\chosen\chosen.min.css" />
+    <Content Include="Styles\css\content.css" />
+    <Content Include="Styles\css\content.min.css" />
     <Content Include="Styles\css\eshopcss.css" />
     <Content Include="Styles\css\jquery.auto-complete.css" />
     <Content Include="Styles\css\jquery.auto-complete.min.css" />
@@ -2419,6 +2421,7 @@
     <Content Include="Styles\images\plantoasis3.png" />
     <Content Include="Styles\images\plantoasis4.png" />
     <Content Include="Styles\images\plantoasis5.png" />
+    <Content Include="Styles\images\Programovacie-jazyky-programovanie-1024x682.jpg" />
     <Content Include="Styles\images\Recipe App.png" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
