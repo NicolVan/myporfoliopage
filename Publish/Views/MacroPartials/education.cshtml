@@ -8,26 +8,31 @@
 }
 
 <div class="container-fluid">
-<div class="row">
-    <h1>Vzdelanie a práca</h1>
-    <br>
-    <h2>Stredná škola</h2>
-    <p>@edumodel.HightSchool</p>
-    <h2>Vysoká škola</h2>
-    <p>@edumodel.University</p>
-    <h2>Práca</h2>
-    <p>2023 - súčastnoť  Labaš s.r.o</p>
-    <p>Pokladník</p>
-    <p>2022 - 2023 Asko s.r.o</p>
-    <p>Plánovač kuchyň</p>
-    <p>2020 - 2022 Labaš s.r.o</p>
-    <p>Pokladník</p>
-    <h2>Kurzy</h2>
-    <ul>
-        @foreach (string nameCourse in edumodel.Namecourses.nameCourse)
-        {
-            <li><p>@nameCourse</p></li>
-        }
-    </ul>
-</div>
+    <div class="row">
+        <h1>Vzdelanie a práca</h1>
+        <br>
+        <h2>Stredná škola</h2>
+        <p>@edumodel.HightSchool</p>
+        <br />
+        <h2>Vysoká škola</h2>
+        <p>@edumodel.University</p>
+        <br />
+        <h2>Práca</h2>
+        <p>2023 - súčasnosť   Pokladník</p>
+        <p class="smalls">Labaš s.r.o</p>
+        <br />
+        <p>2022 - 2023   Plánovač kuchyň</p>
+        <p class="smalls"> Asko s.r.o</p>
+        <br />
+        <p>2020 - 2022    Pokladník</p>
+        <p class="smalls">Labaš s.r.o</p>
+
+        <h3>Kurzy</h3>
+        <ul>
+            @foreach (string nameCourse in edumodel.Namecourses.nameCourse)
+            {
+                <li><p>@nameCourse</p></li>
+            }
+        </ul>
+    </div>
 </div>

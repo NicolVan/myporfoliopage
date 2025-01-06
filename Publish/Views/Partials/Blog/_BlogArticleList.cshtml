@@ -2,7 +2,7 @@
 
 @{
     // Get all articles
-    List<IPublishedContent> articleList = Umbraco.Content(4276).ChildrenOfType("blogArticle").ToList();
+    List<IPublishedContent> articleList = Umbraco.Content(2067).ChildrenOfType("blogArticle").ToList();
     // Get only valid articles
     int categoryId = Model.IsDocumentType("blogCategory") ? Model.Id : 0;
     List<IPublishedContent> tmpList = new List<IPublishedContent>(articleList.Count + 1);

@@ -1,0 +1,37 @@
+﻿@using NikolaVan.lib.Models
+@model LoginModel
+
+
+<div class="plant-oasis-form">
+    @using (Html.BeginUmbracoForm<NikolaVan.lib.Controllers.MemberController>("SubmitLogin", null, new { @class = "form-horizontal", role = "form" }))
+    {
+@Html.AntiForgeryToken()
+                <h1>Prihlásenie</h1>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-item">
+                                            @Html.LabelFor(m => m.Username)
+                                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", placeholder = "Váš e-mail" })
+                                            @Html.ValidationMessageFor(m => m.Username)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-item">
+                                            @Html.LabelFor(m => m.Password)
+                                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Vaše heslo" })
+                                            @Html.ValidationMessageFor(m => m.Password)
+                                            <p class="text-right"><a href="@Url.Content("~/zabudnute-heslo")">Zabudnuté heslo?</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Zapamätať prihlásenie</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-item">
+                                            @Html.ValidationSummary(true)
+                                            <button type="submit" class="btn btn-primary login w-100">Prihlásiť</button>
+                                        </div>
+                                    </div>
+                                </div>}
+</div>

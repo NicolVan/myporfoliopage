@@ -18,12 +18,141 @@
     align-items: center;
     gap: 20rem;
 }
+/* Protected menu */
+@media(min-width: 768px) {
+    .protected-menu {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .protected-menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.protected-menubar {
+    background-color: white;
+}
+
+    .protected-menubar .title {
+        color: #5c9d9d;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+@media(max-width: 767px) {
+    .protected-menubar .title {
+        text-align: right;
+    }
+}
+
+.protected-menubar .navbar-toggle {
+    border: 2px solid #5c9d9d
+}
+
+    .protected-menubar .navbar-toggle:hover {
+        background-color: #5c9d9d
+    }
+
+    .protected-menubar .navbar-toggle .icon-bar {
+        background-color: #5c9d9d;
+    }
+
+    .protected-menubar .navbar-toggle:hover .icon-bar {
+        background-color: #FFF;
+    }
+
+.protected-menubar .menu {
+    padding: 0 30px;
+}
+
+@media(max-width: 767px) {
+    .protected-menubar .menu {
+        border-top: 1px solid #5c9d9d;
+    }
+}
+
+.protected-menubar ul, .protected-menubar ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .protected-menubar ul, .protected-menubar ul li a {
+        padding: 5px;
+        margin: 0;
+        display: block;
+        text-decoration: none;
+        color: #5c9d9d;
+        text-shadow: none;
+        font-weight: 500;
+    }
+
+        .protected-menubar ul li a:hover {
+            text-decoration: none;
+            color: #FFF;
+            background-color: #4e8484;
+            text-shadow: none;
+        }
+
+.protected-menubar .separator {
+    height: 1px;
+    display: block;
+    content: '';
+    background-color: #5c9d9d;
+}
+
+.protected-menubar .more-settings {
+    padding: 0 10px;
+}
+
+.protected-menubar .logout-btn {
+    padding: 20px;
+}
+
+  
+    .protected-menubar .logout-btn a {
+        display: block;
+        background-color: #5c9d9d;
+        color: #FFF;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+        .protected-menubar .logout-btn a:hover {
+            background-color: #4e8484;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+.protected-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tool-item {
+    display:inline-block;
+    padding:10px 10px;
+}
 .projects {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-
+.mobile-tools .tool-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px 5px;
+}
+@media(max-width: 767px) {
+    .desktop-only {
+        display: none;
+    }
+}
     .project img {
         width: 40%;
         border-radius: 10px;
@@ -205,14 +334,15 @@ button.prev {
 }
 .blog-page-body {
     min-height: 100vh;
-    padding: 170px;
+    margin-top:150px;
+    padding: 10px;
 }
 button.next {
     right: 10px;
 }
 p{
     color: black ;
-    font-size:2rem;
+    font-size:1.8rem;
 }
     button.prev:hover,
     button.next:hover {
@@ -232,7 +362,7 @@ p{
     margin-top: 20px;
     margin-bottom:20px;
 }
-* Header menu */
+
 .navbar {
     border-radius: 0;
     min-height: 0;
@@ -267,27 +397,17 @@ p{
                 color: #2B292E;
                 text-decoration: none;
             }
-
 .navbar-logo {
-    width: 200px;
-    text-align: center;
-    display: inline-block;
+    width: 110px;
+    height:110px;
     margin: auto;
+    border-radius: 50%;
 }
 
-    .navbar-logo a {
-        text-decoration: none;
-        color: #2B292E;
-    }
-
     .navbar-logo img {
-        width: 100px;
-        margin: auto;
-        border-radius:50%;
-    }
-    .navbar-logo span {
-        font-size: 18px;
-        font-weight: bold;
+        width: 100%; 
+        height: 100%; 
+        border-radius: 50%; 
     }
 
 @media(max-width: 767px) {
@@ -295,7 +415,19 @@ p{
         float: left;
     }
 }
+#custom {
+    display: flex;
+    flex-direction: column; 
+    padding: 0;
+}
 
+    #custom li {
+        display: block; /* Zabezpečí, že položky zaberajú celú šírku */
+        width: 100%;
+    }
+.navbar-collapse.collapse.navbar-menu .navbar-logo{
+ display:inline;
+}
 @media(min-width: 768px) {
     .header .top-bar {
         text-align: center;
@@ -308,9 +440,8 @@ p{
     .navbar-menu {
         margin-left: 20px;
     }
-
+ 
     .navbar-default .navbar-nav > li > a:hover {
-        border-bottom: 5px solid #2B292E;
     }
 
     .navbar-collapse.collapse.navbar-menu {
@@ -319,7 +450,6 @@ p{
         padding-top: 25px;
     }
 }
-
 
 
 /* Mobile submenu */
@@ -347,7 +477,22 @@ p{
     top: 0;
     z-index: 100;
 }
+@media (min-width: 768px) {
+    #custom {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
 
+        #custom li {
+            width: auto; 
+            border-bottom: none; 
+        }
+
+            #custom li a {
+                text-align: center;
+            }
+}
 @media(min-width: 768px) {
     .nav > li > a.mobile-submenu-caret {
         display: none;
@@ -360,7 +505,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #8d9999;
 }
 .blog-categories ul.bc-menu li {
@@ -594,6 +739,7 @@ h2 {
     color: white;
     font-size:2rem;
     text-align:center;
+    padding:10px 10px;
 }
 footer {
     background-color: #5c9d9d;
@@ -627,11 +773,11 @@ footer span{
 /* Adjust font size and alignment for mobile */
 @media (max-width: 767px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+      
     }
 
    
@@ -860,7 +1006,9 @@ footer span{
             width: auto;
             background-color: white;
         }
-
+.mysection{
+    padding-top:50px;
+}
 .btn-secondary {
     font-size: 1.5rem;
     background-color: #71bdbd;
@@ -869,6 +1017,33 @@ footer span{
     border-radius: 5px;
     color: white;
     font-weight: bold;
+}
+.cover {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.jazyky{
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .jazyky {
+        max-height: 200px; 
+        object-fit: contain; 
+    }
+}
+
+@media (max-width: 768px) { 
+    .cover {
+        height: 200px; 
+    }
+}
+
+.language {
+    padding-top: 50px;
 }
 .btn-default {
     font-size: 2rem;

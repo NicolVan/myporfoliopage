@@ -1,4 +1,5 @@
-﻿using NikolaVan.lib.Util;
+﻿using NikolaVan.lib.Models;
+using NikolaVan.lib.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,15 +16,28 @@ namespace NikolaVan.lib.Controllers
         {
             get
             {
-                return this.HttpContext.Server.MapPath("~/Styles/Images");
+                return this.HttpContext.Server.MapPath("~/Styles/images");
             }
         }
-
-        protected RedirectToUmbracoPageResult RedirectToMyWebpageUmbracoPage(string pageKey)
+        public string CurrentSessionId
+        {
+            get
+            {
+                return HttpContext.Session.SessionID;
+            }
+        }
+        public HttpRequest CurrentRequest
+        {
+            get
+            {
+                return new _BaseControllerUtil().CurrentRequest;
+            }
+        }
+        protected RedirectToUmbracoPageResult RedirectToUmbracoPage(string pageKey)
         {
             return this.RedirectToUmbracoPage(GetPageId(pageKey));
         }
-        protected RedirectToUmbracoPageResult RedirectToMyWebpageUmbracoPage(string pageKey, string queryString)
+        protected RedirectToUmbracoPageResult RedirectToUmbracoPage(string pageKey, string queryString)
         {
             return this.RedirectToUmbracoPage(GetPageId(pageKey), queryString);
         }
@@ -32,7 +46,27 @@ namespace NikolaVan.lib.Controllers
         {
             return ConfigurationUtil.GetPageId(pageKey);
         }
+
+        public void SetSeoModel(_SeoModel seo)
+        {
+            this.TempData[_SeoModel.TemDataKey] = seo;
+        }
+
+        //public void SetCurrentProductCategoryModel(CategoryPublicModel currentProductCategory)
+        //{
+        //    GetCurrentEshopModel().CurrentProductCategory = currentProductCategory;
+        //}
+        //public _EshopModel GetCurrentEshopModel()
+        //{
+        //    if (!this.TempData.ContainsKey(_EshopModel.TemDataKey))
+        //    {
+        //        this.TempData[_EshopModel.TemDataKey] = new _EshopModel() { CurrentProductCategory = null };
+        //    }
+
+        //    return (_EshopModel)this.TempData[_EshopModel.TemDataKey];
+        //}
     }
+
     public class _BaseControllerUtil
     {
         public string CurrentSessionId
@@ -48,6 +82,10 @@ namespace NikolaVan.lib.Controllers
             {
                 return HttpContext.Current.Request;
             }
+        }
+        public string GetRequestParam(string paramName)
+        {
+            return CurrentRequest.Params.Get(paramName);
         }
 
         public string SiteRootUrl
@@ -68,5 +106,5 @@ namespace NikolaVan.lib.Controllers
             return string.Format("{0}{1}", this.SiteRootUrl, relativeUrl);
         }
     }
-
 }
+

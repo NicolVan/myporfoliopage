@@ -4,7 +4,7 @@
 }
 
 <script src="@Url.Content("~/Scripts/jquery.lazy.min.js")" type="text/javascript"></script>
-<script src="@Url.Content("~/Scripts/lightslider.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/lightslider.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/lightgallery.min.js")" type="text/javascript"></script>
 
 <div class="photo-slider">
@@ -31,7 +31,7 @@
             $('#lightSlider').lightSlider({
                 gallery: true,
                 item: 1,
-                loop: false,
+                loop: true,
                 keyPress: true,
                 thumbItem: @imgCount,
                 slideMargin: 0,
@@ -41,12 +41,16 @@
                     //el.lightGallery({
                     //    selector: '#lightSlider .lslide'
                     //});
+                    $('#lightSlider .lslide').first().addClass('active');
                     sliderObject = el;
                     $('.photo-slider-count').html(el.getCurrentSlideCount() + "/" + el.getTotalSlideCount());
                     sliderObject.goToSlide(slideNum);
                 },
                 onAfterSlide: function (el, scene) {
                     $('.photo-slider-count').html(el.getCurrentSlideCount() + "/" + el.getTotalSlideCount());
+                    $('#lightSlider .lslide').eq(scene).addClass('active');
+                    $('#lightSlider .lslide').removeClass('active');
+                    
                 }
             });
     });

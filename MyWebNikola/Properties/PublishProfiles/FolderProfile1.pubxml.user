@@ -5,6 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\nikol\Documents\GitHub\myporfoliopage\Publish</_PublishTargetUrl>
+    <History>True|2025-01-06T18:59:27.3889892Z;True|2025-01-04T11:27:22.2498017+01:00;False|2025-01-04T11:26:57.4854714+01:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Data/Lang/cs.xml">
@@ -19,8 +20,23 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="App_Data/MailTemplates/EmailOne_Sk.html">
       <publishTime>11/15/2024 10:13:30</publishTime>
     </File>
+    <File Include="App_Data/MailTemplates/LostPassword_Sk.html">
+      <publishTime>01/06/2025 19:56:15</publishTime>
+    </File>
     <File Include="App_Plugins/MyWebNikola/Views/Contact/ContactForm.cshtml">
-      <publishTime>12/21/2024 14:43:33</publishTime>
+      <publishTime>01/03/2025 09:29:04</publishTime>
+    </File>
+    <File Include="App_Plugins/MyWebNikola/Views/CustomerData/EditMyPassword.cshtml">
+      <publishTime>01/06/2025 19:22:33</publishTime>
+    </File>
+    <File Include="App_Plugins/MyWebNikola/Views/CustomerRegister/LostPassword.cshtml">
+      <publishTime>01/06/2025 19:56:10</publishTime>
+    </File>
+    <File Include="App_Plugins/MyWebNikola/Views/Member/EditPassword.cshtml">
+      <publishTime>01/06/2025 18:29:06</publishTime>
+    </File>
+    <File Include="App_Plugins/MyWebNikola/Views/Member/Login.cshtml">
+      <publishTime>01/05/2025 11:22:21</publishTime>
     </File>
     <File Include="App_Plugins/MyWebNikola/Views/Web.config">
       <publishTime>09/29/2024 11:24:32</publishTime>
@@ -188,10 +204,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/24/2018 01:23:52</publishTime>
     </File>
     <File Include="bin/MyWebNikola.dll">
-      <publishTime>12/21/2024 14:26:19</publishTime>
+      <publishTime>01/06/2025 19:48:06</publishTime>
     </File>
     <File Include="bin/MyWebNikola.pdb">
-      <publishTime>12/21/2024 14:26:19</publishTime>
+      <publishTime>01/06/2025 19:48:06</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>11/27/2018 19:07:34</publishTime>
@@ -200,10 +216,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/27/2018 18:59:08</publishTime>
     </File>
     <File Include="bin/NikolaVan.lib.dll">
-      <publishTime>12/21/2024 14:25:01</publishTime>
+      <publishTime>01/06/2025 19:48:05</publishTime>
     </File>
     <File Include="bin/NikolaVan.lib.pdb">
-      <publishTime>12/21/2024 14:25:01</publishTime>
+      <publishTime>01/06/2025 19:48:05</publishTime>
     </File>
     <File Include="bin/NPoco.dll">
       <publishTime>06/12/2018 02:57:34</publishTime>
@@ -592,6 +608,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Media/Web.config">
       <publishTime>11/12/2024 12:09:50</publishTime>
     </File>
+    <File Include="robots.txt">
+      <publishTime>01/05/2025 10:58:15</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>09/29/2024 20:04:27</publishTime>
     </File>
@@ -686,7 +705,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/29/2024 20:04:26</publishTime>
     </File>
     <File Include="Scripts/lightslider.js">
-      <publishTime>09/29/2024 20:04:27</publishTime>
+      <publishTime>01/06/2025 17:02:58</publishTime>
     </File>
     <File Include="Scripts/lightslider.min.js">
       <publishTime>09/29/2024 20:04:28</publishTime>
@@ -695,7 +714,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2024 08:31:57</publishTime>
     </File>
     <File Include="Scripts/script.js">
-      <publishTime>12/15/2024 11:29:35</publishTime>
+      <publishTime>01/02/2025 19:30:50</publishTime>
     </File>
     <File Include="Scripts/scroll.js">
       <publishTime>09/29/2024 20:04:26</publishTime>
@@ -1955,13 +1974,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/29/2024 10:25:32</publishTime>
     </File>
     <File Include="Styles/css/bootstrap-theme.css">
-      <publishTime>12/21/2024 16:40:25</publishTime>
+      <publishTime>01/06/2025 17:41:32</publishTime>
     </File>
     <File Include="Styles/css/bootstrap-theme.min.css">
       <publishTime>09/29/2024 20:03:48</publishTime>
     </File>
     <File Include="Styles/css/bootstrap.css">
-      <publishTime>12/21/2024 15:08:44</publishTime>
+      <publishTime>01/06/2025 17:39:48</publishTime>
     </File>
     <File Include="Styles/css/bootstrap.min.css">
       <publishTime>09/29/2024 20:03:48</publishTime>
@@ -1977,6 +1996,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Styles/css/chosen/chosen.min.css">
       <publishTime>09/29/2024 20:03:48</publishTime>
+    </File>
+    <File Include="Styles/css/content.css">
+      <publishTime>01/06/2025 17:41:45</publishTime>
+    </File>
+    <File Include="Styles/css/content.min.css">
+      <publishTime>11/13/2024 11:00:14</publishTime>
     </File>
     <File Include="Styles/css/eshopcss.css">
       <publishTime>10/19/2024 16:10:07</publishTime>
@@ -1994,7 +2019,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/29/2024 20:03:48</publishTime>
     </File>
     <File Include="Styles/css/lightslider.css">
-      <publishTime>09/29/2024 20:03:48</publishTime>
+      <publishTime>01/06/2025 17:35:01</publishTime>
     </File>
     <File Include="Styles/css/lightslider.min.css">
       <publishTime>09/29/2024 20:03:48</publishTime>
@@ -2018,7 +2043,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/29/2024 20:03:48</publishTime>
     </File>
     <File Include="Styles/css/style.css">
-      <publishTime>12/21/2024 16:45:29</publishTime>
+      <publishTime>01/06/2025 18:04:59</publishTime>
     </File>
     <File Include="Styles/css/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
       <publishTime>09/29/2024 20:03:49</publishTime>
@@ -7174,6 +7199,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Styles/images/ingredientlist.png">
       <publishTime>08/09/2024 09:38:08</publishTime>
     </File>
+    <File Include="Styles/images/loga.png">
+      <publishTime>01/04/2025 10:54:01</publishTime>
+    </File>
     <File Include="Styles/images/LoginPage.png">
       <publishTime>08/09/2024 09:36:42</publishTime>
     </File>
@@ -7460,7 +7488,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/18/2020 10:30:50</publishTime>
     </File>
     <File Include="Umbraco/Js/umbraco.controllers.js">
-      <publishTime>06/18/2020 10:30:50</publishTime>
+      <publishTime>01/06/2025 19:54:05</publishTime>
     </File>
     <File Include="Umbraco/Js/umbraco.directives.js">
       <publishTime>06/18/2020 10:30:50</publishTime>
@@ -12707,7 +12735,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/18/2020 10:30:50</publishTime>
     </File>
     <File Include="Views/BlogArticle.cshtml">
-      <publishTime>12/18/2024 16:54:35</publishTime>
+      <publishTime>01/06/2025 18:09:29</publishTime>
     </File>
     <File Include="Views/BlogAuthor.cshtml">
       <publishTime>12/17/2024 19:28:34</publishTime>
@@ -12731,31 +12759,37 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2024 08:35:36</publishTime>
     </File>
     <File Include="Views/MacroPartials/education.cshtml">
-      <publishTime>12/15/2024 11:31:51</publishTime>
+      <publishTime>01/03/2025 09:56:55</publishTime>
+    </File>
+    <File Include="Views/MacroPartials/LoginForm.cshtml">
+      <publishTime>01/05/2025 11:44:16</publishTime>
+    </File>
+    <File Include="Views/MacroPartials/LostPassword.cshtml">
+      <publishTime>01/06/2025 18:34:47</publishTime>
     </File>
     <File Include="Views/MacroPartials/plantoasis.cshtml">
-      <publishTime>12/21/2024 15:02:19</publishTime>
+      <publishTime>01/06/2025 17:19:46</publishTime>
     </File>
     <File Include="Views/MacroPartials/project.cshtml">
-      <publishTime>12/21/2024 12:48:14</publishTime>
+      <publishTime>01/06/2025 15:59:11</publishTime>
     </File>
     <File Include="Views/MacroPartials/recipeapp.cshtml">
-      <publishTime>12/21/2024 15:15:49</publishTime>
+      <publishTime>01/03/2025 11:18:34</publishTime>
     </File>
     <File Include="Views/MacroPartials/vlny.cshtml">
-      <publishTime>12/21/2024 14:34:15</publishTime>
+      <publishTime>01/02/2025 17:48:06</publishTime>
     </File>
     <File Include="Views/Partials/Blog/_BlogArticleList.cshtml">
-      <publishTime>12/18/2024 16:46:56</publishTime>
+      <publishTime>01/06/2025 18:07:52</publishTime>
     </File>
     <File Include="Views/Partials/Blog/_BlogCategories.cshtml">
       <publishTime>12/17/2024 21:16:23</publishTime>
     </File>
     <File Include="Views/Partials/Blog/_BlogFooter.cshtml">
-      <publishTime>12/17/2024 19:23:46</publishTime>
+      <publishTime>01/02/2025 18:33:16</publishTime>
     </File>
     <File Include="Views/Partials/Blog/_BlogHeader.cshtml">
-      <publishTime>12/17/2024 19:24:07</publishTime>
+      <publishTime>01/02/2025 18:33:20</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap3-Fluid.cshtml">
       <publishTime>11/12/2024 12:09:50</publishTime>
@@ -12782,25 +12816,34 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/12/2024 12:09:49</publishTime>
     </File>
     <File Include="Views/Partials/Layout/_Footer.cshtml">
-      <publishTime>12/21/2024 16:46:46</publishTime>
+      <publishTime>01/02/2025 16:06:27</publishTime>
     </File>
     <File Include="Views/Partials/Layout/_Header.cshtml">
-      <publishTime>12/10/2024 15:18:15</publishTime>
+      <publishTime>01/06/2025 18:03:48</publishTime>
     </File>
     <File Include="Views/Partials/Layout/_HtmlHead.cshtml">
-      <publishTime>12/18/2024 17:47:47</publishTime>
+      <publishTime>01/06/2025 17:17:31</publishTime>
     </File>
     <File Include="Views/Partials/Layout/_HtmlScripts.cshtml">
       <publishTime>11/15/2024 08:30:45</publishTime>
     </File>
     <File Include="Views/Partials/Layout/_MainNavigation.cshtml">
-      <publishTime>12/10/2024 16:25:45</publishTime>
+      <publishTime>01/06/2025 17:49:26</publishTime>
+    </File>
+    <File Include="Views/Partials/Me/_ProtectNavigation.cshtml">
+      <publishTime>01/06/2025 19:25:41</publishTime>
+    </File>
+    <File Include="Views/ProtectedPage.cshtml">
+      <publishTime>01/04/2025 22:14:44</publishTime>
+    </File>
+    <File Include="Views/sitemap.cshtml">
+      <publishTime>01/05/2025 11:13:20</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>11/12/2024 12:09:49</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/21/2024 14:26:22</publishTime>
+      <publishTime>01/06/2025 19:59:18</publishTime>
     </File>
   </ItemGroup>
 </Project>

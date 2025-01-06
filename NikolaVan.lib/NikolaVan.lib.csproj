@@ -34,16 +34,33 @@
     <Reference Include="dufeksoft.lib">
       <HintPath>..\..\dufeksoft\dufeksoft.lib\dufeksoft.lib\bin\Release\dufeksoft.lib.dll</HintPath>
     </Reference>
+    <Reference Include="NPoco">
+      <HintPath>..\packages\NPoco.3.9.4\lib\net45\NPoco.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Http">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,17 +86,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CustomerDataController.cs" />
+    <Compile Include="Controllers\CustomerRegisterController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
     <Compile Include="Controllers\MyWebNikolaApiController.cs" />
     <Compile Include="Controllers\_BaseApiController.cs" />
     <Compile Include="Controllers\_BaseController.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
     <Compile Include="Models\EducationModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\MemberModel.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\_BaseModel.cs" />
     <Compile Include="NikolaVaniscakUmbracoApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\MemberRepository.cs" />
+    <Compile Include="Repositories\UserPropRepository.cs" />
+    <Compile Include="Repositories\_BaseRepository.cs" />
     <Compile Include="Util\ConfigurationUtil.cs" />
     <Compile Include="Util\HtmlHelper.cs" />
     <Compile Include="Util\MyWebNikolaMailer.cs" />
+    <Compile Include="Util\ParamUtil.cs" />
     <Compile Include="Util\TranslateUtil.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

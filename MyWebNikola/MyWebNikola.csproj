@@ -196,7 +196,6 @@
     <Reference Include="System.Runtime" />
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.9.0\lib\netstandard2.0\System.Threading.Tasks.Dataflow.dll</HintPath>
@@ -271,6 +270,7 @@
     <Content Include="App_Data\Lang\en.xml" />
     <Content Include="App_Data\MailTemplates\ContactSendSuccess_Sk.html" />
     <Content Include="App_Data\MailTemplates\EmailOne_Sk.html" />
+    <Content Include="App_Data\MailTemplates\LostPassword_Sk.html" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -293,6 +293,7 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="config\splashes\noNodes.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\chosen.jquery.js" />
@@ -302,6 +303,10 @@
     <Content Include="Scripts\eshopumbraco.js" />
     <Content Include="App_Plugins\MyWebNikola\Views\Contact\ContactForm.cshtml" />
     <Content Include="App_Plugins\MyWebNikola\Views\Web.config" />
+    <Content Include="App_Plugins\MyWebNikola\Views\Member\Login.cshtml" />
+    <Content Include="App_Plugins\MyWebNikola\Views\Member\EditPassword.cshtml" />
+    <Content Include="App_Plugins\MyWebNikola\Views\CustomerData\EditMyPassword.cshtml" />
+    <Content Include="App_Plugins\MyWebNikola\Views\CustomerRegister\LostPassword.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -2413,6 +2418,7 @@
     <Content Include="Styles\images\blog-facebook.png" />
     <Content Include="Styles\images\Favourite page.png" />
     <Content Include="Styles\images\ingredientlist.png" />
+    <Content Include="Styles\images\loga.png" />
     <Content Include="Styles\images\LoginPage.png" />
     <Content Include="Styles\images\Me.jpg" />
     <Content Include="Styles\images\plantoasis.png" />
@@ -2421,7 +2427,6 @@
     <Content Include="Styles\images\plantoasis3.png" />
     <Content Include="Styles\images\plantoasis4.png" />
     <Content Include="Styles\images\plantoasis5.png" />
-    <Content Include="Styles\images\Programovacie-jazyky-programovanie-1024x682.jpg" />
     <Content Include="Styles\images\Recipe App.png" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
@@ -4386,7 +4391,11 @@
     <Content Include="Views\Partials\Blog\_BlogCategories.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogFooter.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogHeader.cshtml" />
-    <Content Include="Views\MacroPartials\vlny.cshtml" />
+    <Content Include="Views\MacroPartials\LoginForm.cshtml" />
+    <Content Include="Views\ProtectedPage.cshtml" />
+    <Content Include="Views\sitemap.cshtml" />
+    <Content Include="Views\Partials\Me\_ProtectNavigation.cshtml" />
+    <Content Include="Views\MacroPartials\LostPassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -4402,6 +4411,9 @@
       <Project>{537856e9-250d-4e55-a479-f4ba0a1de846}</Project>
       <Name>NikolaVan.lib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

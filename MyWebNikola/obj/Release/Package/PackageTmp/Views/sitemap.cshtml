@@ -1,0 +1,47 @@
+﻿@inherits UmbracoViewPage
+
+@{
+    Layout = null;
+    var home = Model.Root();
+    string protokol = new NikolaVan.lib.Controllers._BaseControllerUtil().CurrentRequest.Url.Scheme;
+    string prefix = string.Format("{0}://www.nikolvaniscak.sk", protokol);
+
+}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    @MvcHtmlString.Create(RecurseTree(prefix, home))
+    
+</urlset>
+
+@functions
+{
+    string RecurseTree(string prefix, IPublishedContent mainPage)
+    {
+        System.Text.StringBuilder str = new System.Text.StringBuilder();
+        str.Append(string.Format("    <url><loc>{0}{1}</loc></url>\n", prefix, mainPage.Url.TrimEnd('/')));
+        foreach (var page in mainPage.Children)
+        {
+            if (page.IsDocumentType("siteMap"))
+            {
+                continue;
+            }
+            if (page.IsDocumentType("protectedPage"))
+            {
+                continue;
+            }
+            if (page.IsDocumentType("redirectPage"))
+            {
+                continue;
+            }
+            if (page.IsDocumentType("texty"))
+            {
+                continue;
+            }
+
+            str.Append(RecurseTree(prefix, page));
+        }
+
+        return str.ToString();
+    }
+}

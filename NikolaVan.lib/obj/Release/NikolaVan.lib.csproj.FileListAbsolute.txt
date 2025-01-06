@@ -59,3 +59,12 @@ C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\obj\Release\NikolaV
 C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\obj\Release\NikolaVan.lib.csproj.CopyComplete
 C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\obj\Release\NikolaVan.lib.dll
 C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\obj\Release\NikolaVan.lib.pdb
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\NPoco.dll
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.Helpers.dll
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.WebPages.dll
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.Helpers.xml
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.WebPages.xml
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\nikol\Documents\GitHub\myporfoliopage\NikolaVan.lib\bin\Release\System.Web.WebPages.Razor.xml

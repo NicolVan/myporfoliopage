@@ -1,0 +1,3 @@
+Sitemap: https://www.nikolvaniscak.sk/sitemap
+User-agent: *
+Disallow:

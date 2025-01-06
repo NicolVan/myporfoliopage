@@ -328,7 +328,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -337,13 +337,13 @@ fieldset[disabled] .btn-danger.active {
     font-weight: 600;
 }
 .navbar-default .navbar-nav > li > a:focus {
-    text-decoration: underline;
+  
     color: #11193D;
     background-color: transparent;
     text-decoration:none;
 }
 .navbar-default .navbar-nav > li > a:hover {
-    text-decoration: underline;
+ 
     color: #11193D;
     background-color: transparent;
 }
@@ -645,7 +645,6 @@ fieldset[disabled] .btn-danger.active {
 
 h1, .h1, h2, .h2, h3, .h3 {
     color: #11193D;
-    padding-left:20px;
 }
 
 a {
